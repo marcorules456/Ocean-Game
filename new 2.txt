@@ -1,0 +1,77 @@
+
+function quizstart(){
+	
+	$("#questionNumber").text("Question: "+counter);
+	$("#quizContent").text(questions[0].question);
+	
+	
+	box1.text(questions[questionCounter].answer1);
+	box2.text(questions[questionCounter].answer2);
+	box3.text(questions[questionCounter].answer3);
+	box4.text(questions[questionCounter].answer4);
+	box1.appendTo("#buttons");
+	box2.appendTo("#buttons");
+	box3.appendTo("#buttons");
+	box4.appendTo("#buttons");
+	box2.addClass(questions[questionCounter].wrong);
+	box1.addClass(questions[questionCounter].wrong);
+	box3.addClass(questions[questionCounter].right);
+	box4.addClass(questions[questionCounter].wrong);
+}
+function next(){
+	
+	counter++
+	$("#questionNumber").text("Answer:");
+	$("#quizContent").text(answer);
+	$("#buttons").empty();
+	
+}
+
+
+
+// start of the calling functions
+
+$("#start").on("click",function(){
+	
+	quizstart();
+$(".right").on("click",function(){
+	counter++;
+	questionCounter++;
+	answer="wrong";
+	next();
+	setTimeout(quizstart,2000);
+	box1.addClass(questions[questionCounter].right);
+	box2.addClass(questions[questionCounter].right);
+	box3.addClass(questions[questionCounter].right);
+	box4.addClass(questions[questionCounter].right);
+	
+
+});
+$(".wrong").on("click",function(){
+	counter++;
+	questionCounter++;
+	answer="wrong";
+	next();
+	setTimeout(quizstart,2000);
+	box1.addClass(questions[questionCounter].right);
+	box2.addClass(questions[questionCounter].right);
+	box3.addClass(questions[questionCounter].right);
+	box4.addClass(questions[questionCounter].right);
+	
+	
+	
+	
+});
+
+	
+});
+
+
+
+
+
+
+
+
+
+

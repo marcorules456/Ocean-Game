@@ -1,0 +1,94 @@
+
+$("#start").on("click",function(){
+	counter++;
+	
+	$("#questionNumber").text("Question: "+counter);
+	$("#quizContent").text(questions[0].question);
+	
+	
+	box1.text(questions[0].answer1);
+	box2.text(questions[0].answer2);
+	box3.text(questions[0].answer3);
+	box4.text(questions[0].answer4);
+	box1.appendTo("#buttons");
+	box2.appendTo("#buttons");
+	box3.appendTo("#buttons");
+	box4.appendTo("#buttons");
+	box2.addClass("right");
+	box1.addClass("wrong");
+	box3.addClass("wrong");
+	box4.addClass("wrong");
+	
+	
+	
+
+	
+	
+	$(".right").on("click",function(){
+		 
+		 $("#quizNumber").empty();
+		 $("#buttons").empty();
+		 $("#quizContent").empty();
+		$("<h1>").text("Correct!!").appendTo(".quizz");
+		$("<button>").addClass("next").text("next").appendTo(".quizz");
+		score++;
+	});
+		
+		
+		
+	$(".wrong").on("click",function(){
+		
+		$("#quizNumber").empty();
+		 $("#buttons").empty();
+		 $("#quizContent").empty();
+		$("<h1>").text("Answer was Moon").appendTo(".quizz");
+		$("<button>").addClass("next").text("next").appendTo(".quizz");
+		score++;
+	});
+	
+		
+		
+		
+		
+		
+	
+	$(".next").on("click",function(){
+		counter++;
+		questionCounter++;
+		$("#questionNumber").text("Question: "+counter);
+		$("#quizContent").text(questions[0].question);
+	    box1.text(questions[0].answer1);
+		box2.text(questions[0].answer2);
+		box3.text(questions[0].answer3);
+		box4.text(questions[0].answer4);
+		box1.appendTo("#buttons");
+		box2.appendTo("#buttons");
+		box3.appendTo("#buttons");
+		box4.appendTo("#buttons");
+		box2.addClass("wrong");
+		box1.addClass("right");
+		box3.addClass("wrong");
+		box4.addClass("wrong");
+	
+	
+
+		
+	});
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

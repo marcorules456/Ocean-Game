@@ -1,0 +1,112 @@
+#questionNumber {
+	color:purple;
+	text-align:center;
+}
+.title {
+	text-align:center;
+	color:#f4f4f4;
+	background-image:url("tile.jpg");
+	opacity:0.9;
+	text-align:center;
+	font-size:36px;
+	position:relative;
+	bottom:34px;
+	border-bottom:2px purple solid;
+	font-family: arvo;
+}
+body{
+	background-image:url("oceans.jpg");
+	
+}
+.jumbotron{
+	background-color:#7ac7f6;
+	border: 3px black solid;
+
+}
+
+#quizContent{
+	text-align:center;
+	font-family: rubik;
+}
+#comment {
+	color:purple;
+	font-size:28px;
+	text-align:center;
+	
+	
+}
+
+#comment {
+	margin-top:10%;
+	text-align:center;
+	font-size: 40px;
+}
+#quizContent{
+	margin-top:5%;
+	text-align:center;
+	color:gray;
+}
+#answer{
+	color:gray;text-align:center;
+	
+}
+#buttons {
+	margin-top:10%;
+	margin-left:33%;
+	
+}
+#time {
+	color:gray;
+	font-family:rubik;
+}
+#qA {
+	color:#f4f4f4;
+background-image:url('buts.jpg');
+	border: 2px solid black;
+}
+#qB {
+	color:#f4f4f4;
+background-image:url('buts.jpg');
+	border: 2px solid black;
+}
+
+#qC {
+	color:#f4f4f4;
+	background-image:url('buts.jpg');
+	border: 2px solid black;
+}
+#prepare {
+	text-align:center;
+	color: black;
+	
+}
+
+#qD {
+	color:#f4f4f4;
+background-image:url('buts.jpg');
+	border: 2px solid black;
+}
+button {
+	margin-left:2%;
+	margin-top:10px;
+	font-family:rubik;
+}
+li {
+	list-style-type:none;
+}
+.gify {
+	margin-top:10%;
+	margin-left:17%;
+
+}
+.end {
+	color:white;
+	background-color:black;
+	border:red 2px solid;
+	margin-left:40%;
+	
+}
+
+.panel {
+	height:1000px;
+}
